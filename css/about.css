@@ -1,0 +1,123 @@
+@import url('base.css');
+.about-img img{
+    width:100%;
+    min-height: 100px;
+    position: relative;
+}
+.about{
+    position: absolute;
+    left: 0;
+    right:0;
+    top:222px;
+    margin:auto;
+}
+h2{
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 25px;
+}
+h2 a::before{
+    content: '';
+    height: 1px;
+    width: 50px;
+    margin: 0 auto;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom:-4px;
+}
+h2 a::after{
+    content: '';
+    height: 1px;
+    width: 40px;
+    margin: 0 auto;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom:-8px;
+}
+.desc{
+    color:#686868;
+}
+/*   */
+.about-nav ul{
+    margin:10px 0 10px 0;
+    padding:30px 0 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.about-nav ul li{
+    margin-right: 25px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.about-nav ul li a{
+    color: #90939b;
+}
+
+.about-nav ul li:first-of-type a{
+     padding: 8px 15px;
+     background: #f39c12;
+     color:#fff;
+ }
+.about-nav ul li:last-of-type a{
+    padding: 8px 15px;
+    transition: all 0.3s;
+}
+.about-nav ul li:last-of-type:hover a{
+    padding: 8px 15px;
+    background: #f39c12;
+    color:#fff;
+}
+/*about show*/
+.about-show{
+    padding:30px;
+    /*width: 100%;*/
+    /*min-width: 100%;*/
+
+
+}
+.about-show img{
+    min-width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    height: 200px;
+    vertical-align: middle;
+}
+.about-show p{
+    margin:0 0 11px;
+    font-size: 16px;
+    text-indent: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color:#222;
+    word-wrap: break-word;
+    text-align: left;
+}
+/* 响应式 */
+/* 手机端 <768 没有固定宽度col-xs- */
+@media screen and (max-width: 768px){
+    h2{
+        font-size: 20px;
+    }
+    .about{
+        top:20%;
+    }
+}
+/* 平板端 768~992 固定宽度是750px  col-sm- */
+@media screen and (max-width: 992px) and (min-width: 768px){
+
+}
+/* pc小屏 992~1200 固定宽度 970px col-md- */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+}
+/* pc大屏 >1200 固定宽度1170px col-lg- */
+@media screen and (min-width: 1200px){
+
+}

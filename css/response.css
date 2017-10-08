@@ -1,0 +1,208 @@
+/* @import url('base.css'); */
+.container{                  /* 固定宽度 */
+	height: auto;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+.container-fluid{           /*  不固定宽度 */
+   	height: auto;
+   	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+
+}
+.row{
+    /*height: auto;*/
+    /*overflow: hidden;*/
+    /*margin-left: -15px;*/
+	/*margin-right: -15px;*/
+	/*box-sizing: border-box;*/
+    margin-left: -5px;
+    margin-right: -5px;
+}
+/* 清除浮动的bug */
+.row::before, .row::after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	clear: both;
+}
+.index-case [class*="col-"]{
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+[class*="col-"]{
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+    margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+/* 手机端 <768 没有固定宽度col-xs- */
+@media screen and (max-width: 768px){
+	/* 每个屏幕有12列，当屏幕有一列的时候，每一个子元素占比100% /（12/1） */
+	/* 每个屏幕有12列，当屏幕有二列的时候，占比100% /（12/2）*/
+   .col-xs-1{
+   	width: 8.333333%;
+   }
+   .col-xs-2{
+   	width: 16.666666%;
+   }.col-xs-3{
+   	width: 25%;
+   }.col-xs-4{
+   	width: 33.333333%;
+   }.col-xs-5{
+   	width: 41.666666%;
+   }.col-xs-6{
+   	width: 50%;
+   }.col-xs-7{
+   	width: 58.333333%;
+   }.col-xs-8{
+   	width: 66.666666%;
+   }.col-xs-9{
+   	width: 75%;
+   }.col-xs-10{
+   	width: 83.333333%;
+   }.col-xs-11{
+   	width: 91.666666%;
+   }.col-xs-12{
+   	width: 100%;
+   }
+   .hidden-xs{
+    display: none;
+   }
+}
+/* 平板端 768~992 固定宽度是750px  col-sm- */
+@media screen and (max-width: 992px) and (min-width: 768px){
+    /*.container{*/
+    	/*width:750px;*/
+    /*}*/
+    .col-sm-1{
+   	width: 8.333333%;
+   }
+   .col-sm-2{
+   	width: 16.666666%;
+   }.col-sm-3{
+   	width: 25%;
+   }.col-sm-4{
+   	width: 33.333333%;
+   }.col-sm-5{
+   	width: 41.666666%;
+   }.col-sm-6{
+   	width: 50%;
+   }.col-sm-7{
+   	width: 58.333333%;
+   }.col-sm-8{
+   	width: 66.666666%;
+   }.col-sm-9{
+   	width: 75%;
+   }.col-sm-10{
+   	width: 83.333333%;
+   }.col-sm-11{
+   	width: 91.666666%;
+   }.col-sm-12{
+   	width: 100%;
+   }
+   .hidden-sm{
+    display: none;
+   }
+}
+/* pc小屏 992~1200 固定宽度 970px col-md- */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    /*.container{*/
+    	/*width:970px;*/
+    /*}*/
+    .index-case .container-fluid{           /*  不固定宽度 */
+        padding-left:60px !important;
+        padding-right: 60px !important;
+
+    }
+    .index-about .container-fluid{
+        padding-left:60px !important;
+        padding-right: 60px !important;
+    }
+    .col-md-1{
+   	width: 8.333333%;
+   }
+   .col-md-2{
+   	width: 16.666666%;
+   }.col-md-3{
+   	width: 25%;
+   }.col-md-4{
+   	width: 33.333333%;
+   }.col-md-5{
+   	width: 41.666666%;
+   }.col-md-6{
+   	width: 50%;
+   }.col-md-7{
+   	width: 58.333333%;
+   }.col-md-8{
+   	width: 66.666666%;
+   }.col-md-9{
+   	width: 75%;
+   }.col-md-10{
+   	width: 83.333333%;
+   }.col-md-11{
+   	width: 91.666666%;
+   }.col-md-12{
+   	width: 100%;
+   }
+   .hidden-md{
+    display: none;
+   }
+}
+/* pc大屏 >1200 固定宽度1170px col-lg- */
+@media screen and (min-width: 1200px){
+    .container{
+        width:1170px;
+    }
+    .index-case .container-fluid{           /*  不固定宽度 */
+        padding-left:60px !important;
+        padding-right: 60px !important;
+
+    }
+    .index-about .container-fluid{
+        padding-left:60px !important;
+        padding-right: 60px !important;
+    }
+    .col-lg-1{
+   	width: 8.333333%;
+   }
+   .col-lg-2{
+   	width: 16.666666%;
+   }.col-lg-3{
+   	width: 25%;
+   }.col-lg-4{
+   	width: 33.333333%;
+   }.col-lg-5{
+   	width: 41.666666%;
+   }.col-lg-6{
+   	width: 50%;
+   }.col-lg-7{
+   	width: 58.333333%;
+   }.col-lg-8{
+   	width: 66.666666%;
+   }.col-lg-9{
+   	width: 75%;
+   }.col-lg-10{
+   	width: 83.333333%;
+   }.col-lg-11{
+   	width: 91.666666%;
+   }.col-lg-12{
+   	width: 100%;
+   }
+   .hidden-lg{               /* 隐藏 */
+    display: none;
+   }
+}

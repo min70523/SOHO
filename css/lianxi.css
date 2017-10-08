@@ -1,0 +1,203 @@
+@import url('base.css');
+/*   */
+.lianxi-nav{
+    margin-bottom: 40px;
+}
+.lianxi-nav ul{
+    margin:10px 0 10px 0;
+    padding:30px 0 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.lianxi-nav ul li{
+    margin-right: 25px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.lianxi-nav ul li a{
+    color: #90939b;
+}
+
+.lianxi-nav ul li:last-of-type a{
+    padding: 8px 15px;
+    background: #f39c12;
+    color:#fff;
+}
+.lianxi-nav ul li:first-of-type a{
+    padding: 8px 15px;
+    transition: all 0.3s;
+}
+.lianxi-nav ul li:first-of-type:hover a{
+    padding: 8px 15px;
+    background: #f39c12;
+    color:#fff;
+}
+/* 联系我开始 */
+.touch-section{
+    height: auto;
+    overflow: hidden;
+    padding: 90px 0;
+
+}
+/*.touch-section .container{*/
+    /*padding-top: 20px;*/
+    /*background: #f6f6f6;*/
+/*}*/
+.touch-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.touch-title h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    line-height: 27px;
+}
+.touch-title p{
+    color: #8D8D8D;
+    font-size: 17px;
+}
+.touch-left{
+    background: #fafafa;
+}
+.touch-right{
+    background: #efefef;
+    min-height: 520px;
+    padding-right: 50px;
+}
+.touch-left ul{
+    background: #fff;
+    padding: 20px;
+    margin: 5px 0;
+}
+.touch-left ul li{
+    margin-bottom: 13px;
+    text-align: left;
+}
+.touch-left ul li:last-of-type{
+    margin-bottom: 0;
+}
+.touch-left ul li i{
+    display: block;
+    font-size: 28px;
+}
+.touch-left ul li span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.touch-left ul li p{
+    font-size: 17px;
+    color: #888;
+    line-height: 27px;
+}
+#touch-form input{
+    display: block;
+    min-width: 100%;
+    margin-bottom: 30px;
+    height: 40px;
+    padding: 7px 10px;
+    border: 0;
+    border-bottom: 1px solid #888;
+}
+#touch-form input:focus{
+    border:none;
+    border-bottom: 1px solid #000;
+}
+.massage{
+    position: relative;
+}
+.massage textarea{
+    resize: vertical;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    background: #fff;
+    border: none;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #888;
+}
+.touch-btn{
+    padding:4px 20px;
+    background: #333;
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    transition: all 0.5s;
+    padding: 10px 20px;
+    outline:none;
+    float: left;
+}
+.touch-btn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.touch-btn i{
+    font-size: 46px;
+    line-height: 160px;
+    transition: all 0.5s;
+}
+.touch-btn:hover{
+    background: #f39c12;
+}
+h4{
+    font-size: 26px;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 30px;
+    color:#323232;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-weight: 400;
+    position: relative;
+}
+h4::before{
+    content: '';
+    height: 1px;
+    width: 65px;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom:-4px;
+    text-align: left;
+    margin-left: 20px;
+}
+h4::after{
+    content: '';
+    height: 1px;
+    width: 40px;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom:-8px;
+    text-align: left;
+    margin-left: 20px;
+}
+/* 联系我结束 */
+/* 响应式 */
+/* 手机端 <768 没有固定宽度col-xs- */
+@media screen and (max-width: 768px){
+
+}
+/* 平板端 768~992 固定宽度是750px  col-sm- */
+@media screen and (max-width: 992px) and (min-width: 768px){
+    .container{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+/* pc小屏 992~1200 固定宽度 970px col-md- */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .container{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+/* pc大屏 >1200 固定宽度1170px col-lg- */
+@media screen and (min-width: 1200px){
+
+}
