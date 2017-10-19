@@ -61,6 +61,8 @@
 	z-index: 99;
 	width:600px;
 	left:-540px;
+	/* display: block; */
+
 	transition: all 0.5s;
 }
 .nav-l>.nav-menu{
@@ -92,6 +94,8 @@
 	position: absolute;
 	left: 0;
 	top:0;
+	/* display: none; */
+
 
 }
 .nav-closer{
@@ -233,14 +237,19 @@
 	overflow: hidden;
 }
 .banner .banner-img{
-	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	/* overflow: hidden; */
 }
 .banner .banner-img li{
 	position: absolute;
 	top:0;
-	left:0;
-	overflow: hidden;
-	/*opacity: 0;*/
+	left:100%;
+	float: left;
+	/* transition: all ease 0.1s; */
+}
+.banner .banner-img li:first-child{
+	left: 0;
 }
 #banner-main{
 	height: auto;
@@ -366,7 +375,7 @@
 
 }
 .index-video li{
-	height:340px;
+	/* height:340px; */
 	margin-bottom: 22px;
 }
 .index-video .video-right{
@@ -411,7 +420,7 @@
 	font-weight: 300;
 	color:#656565;
 	font-size: 14px;
-	height: 250px;
+	/* height: 250px; */
 	padding-bottom: 20px;
 	overflow: hidden;
 	box-sizing: border-box;
@@ -455,7 +464,13 @@
 }
 .index-about li{
 	min-height: 1px;
+	/* float: right; */
+}
+.index-about .container-fluid .row>ul>li:first-of-type{
 	float: right;
+}
+.index-about .container-fluid .row>ul>li:last-of-type{
+	float: left;
 }
 .index-about .about-right{
 	width:681px;
@@ -464,7 +479,7 @@
 	background-size: cover;
 }
 .index-about .about-left{
-	padding:80px 40px 0 40px;
+	padding:80px 60px 0 53px;
 }
 .index-about ul:first-of-type{
 	overflow: hidden;
@@ -483,7 +498,9 @@
 	border-radius: 50%;
 	text-align: center;
 	line-height: 78px;
+	
 }
+
 .about-left li .about-icon i{
 	font-size: 38px;
 	color:#f39c12;
@@ -502,6 +519,10 @@
 	line-height: 28px;
 	font-weight: 400;
 	color:#323232;
+	transition: all ease 0.3s;
+}
+.about-left li .about-content>h4:hover{
+	color: #f39c12;
 }
 .about-left li .about-content>p{
 	line-height: 18px;
@@ -680,6 +701,7 @@
 	color:#aaa;
 	padding:0 5px;
 	float: left;
+
 }
 .footer-nav ul li:nth-of-type(3)::before{
 	display: block;
@@ -763,6 +785,20 @@
 	}
 	.banner-main{
 		height: 250px;
+	}
+	.econav .nav-l{
+	/* min-width:460px; */
+	max-width: 360px;
+	}
+	.nav-left{
+	/* min-width:400px; */
+	max-width: 300px;
+	/* display: block; */
+
+	transition: all 0.5s;
+	}
+	#navTop{
+		display: none;
 	}
 }
 /* 平板端 768~992 固定宽度是750px  col-sm- */
