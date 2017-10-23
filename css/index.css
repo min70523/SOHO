@@ -6,10 +6,10 @@
 
 }
 .econav .navTop{
-	height: 70px;
+	height: 60px;
 	background: rgba(255,255,255,0.8);
 	text-align: center;
-	line-height: 70px;
+	line-height: 60px;
 	color: #000;
 	font-weight: 700;
 	letter-spacing: 3px;
@@ -18,26 +18,23 @@
 	/*left:0;*/
 }
 #navTop{
-	height: 70px;
+	height: 60px;
 }
 .navTop-small{
 	width: 100%;
 	float: left;
-	height: 70px;
+	height: 60px;
 	background: rgba(255,255,255,0.8);
-	text-align: center;
-	line-height: 70px;
+	line-height: 60px;
 	color: #000;
-	font-weight: 700;
-	letter-spacing: 3px;
+	font-weight: 800;
+	font-size: 20px;
+	letter-spacing: 3.5px;
 	display: none;
-
+	text-align: left;
 }
 .navTop-more{
 	padding: 5px;
-	/*width: 30px;*/
-	/*height: 45px;*/
-	/*background: #323232;*/
 	float: right;
 	line-height: 45px;
 	margin-top: 10px;
@@ -46,7 +43,6 @@
 .navTop-more i{
 	font-size: 24px;
 	text-align: center;
-
 }
 /* 左 */
 .econav .nav-l{
@@ -62,7 +58,6 @@
 	width:600px;
 	left:-540px;
 	/* display: block; */
-
 	transition: all 0.5s;
 }
 .nav-l>.nav-menu{
@@ -72,7 +67,6 @@
 	right: 10px;
 	/*position: relative;*/
 	transform: rotate(-90deg);
-	
 }
 .nav-l>.nav-menu>span{
 	 font-weight: 700;
@@ -95,8 +89,6 @@
 	left: 0;
 	top:0;
 	/* display: none; */
-
-
 }
 .nav-closer{
 	width: 28px;
@@ -244,13 +236,13 @@
 .banner .banner-img li{
 	position: absolute;
 	top:0;
-	left:100%;
-	float: left;
+	left:0;
+	/*float: left;*/
 	/* transition: all ease 0.1s; */
 }
-.banner .banner-img li:first-child{
-	left: 0;
-}
+/*.banner .banner-img li:first-child{*/
+	/*left: 0;*/
+/*}*/
 #banner-main{
 	height: auto;
 	position: relative;
@@ -263,6 +255,8 @@
 	display: block;
 	width: 100%;
 	/*height: 100%;*/
+	cursor: pointer;
+
 }
 .banner .bm-left{
 	width: 70px;
@@ -310,6 +304,7 @@
 /* 产品展示开始 */
 .index-case{
 	padding: 40px 0 30px 0;
+	
 }
 .index-case h3{
 	font-size: 32px;
@@ -317,6 +312,8 @@
 	font-weight: 300;
 	margin-bottom: 43px;
 	position: relative;
+	transform: translateY(-50px);
+	transition: all linear 1s;
 }
 .index-case h3 a{
 	display: block;
@@ -361,18 +358,66 @@
 .case-Img li{
 	max-height: 400px;
 	float: left;
+	/*position: relative;*/
+	transform: translateY(130px);
+	transition: all linear 1s;
+
 }
 .case-Img li .cI{
 	height: auto;
+	position: relative;
+	font-size: 0;
 }
 .case-Img li .cI>img{
 	width: 100%;
 	height: 100%;
+	transition: all ease 0.3s;
 }
+.case-Img li .cI>img.fangda{
+	transform: rotate(20deg);
+}
+.mask:hover.mask .mask-text{
+	opacity: 1;
+	transform: translateY(0);
+}
+/*.index-case li:hover .mask{*/
+	/*opacity: 1;*/
+	/*filter:alpha(opacity=100);*/
+/*}*/
+/*.mask:hover .case-Img li .cI>img{*/
+	/*transform: scale(1.5,1.5);*/
+/*}*/
+.mask{
+	width: 100%;
+	height: 100%;
+	background: rgba(127, 126, 123, 0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	padding:20px 25px;
+	box-sizing: border-box;
+}
+.mask .mask-text{
+	transform: translateY(-20px);
+	font-size: 24px;
+	opacity: 0;
+	transition: all ease 0.3s;
+	color:#323232;
+	font-weight: 400;
+}
+/*/////*/
+/*.main_img .show .imgArea a:hover{*/
+	/*background: rgba(255,255,255, 0.7);*/
+	/*color:rgba(0,0,0, 0.6);*/
+/*}*/
+
 /*视频开始*/
 .index-video{
 	padding: 40px 0 30px 0;
-
+/* 	transform: translateY(160px);
+	transition: all linear 1s; */
+	overflow: hidden;
 }
 .index-video li{
 	/* height:340px; */
@@ -387,6 +432,8 @@
 	font-weight: 300;
 	margin-bottom: 43px;
 	position: relative;
+	transform: translateY(-50px);
+	transition: all linear 1s;
 }
 .index-video .video-right h3 a{
 	display: block;
@@ -461,6 +508,8 @@
 .index-about{
 	background: #f5f5f5;
 	margin: 10px 0;
+	transform: translateY(130px);
+	transition: all linear 1s;
 }
 .index-about li{
 	min-height: 1px;
@@ -487,6 +536,16 @@
 .about-left li{
 	margin-bottom: 20px;
 	min-height: 98px;
+	transition: all linear 1s;
+}
+.about-left li:first-of-type{
+	transform: translateY(60px);
+}
+.about-left li:nth-of-type(2){
+	transform: translateY(100px);
+}
+.about-left li:nth-of-type(3){
+	transform: translateY(120px);
 }
 .about-left li .about-icon{
 	width:78px;
@@ -591,6 +650,7 @@
 
 .index-bottomcontact{
 	padding:40px 0 30px 0;
+	
 }
 .index-bottomcontact h3{
 	font-size: 32px;
@@ -598,6 +658,8 @@
 	font-weight: 300;
 	margin-bottom: 43px;
 	position: relative;
+	transform: translateY(-50px);
+	transition: all linear 1s;
 }
 .index-bottomcontact h3 a{
 	display: block;
@@ -636,6 +698,8 @@
 }
 .index-bottomcontact ul{
 	overflow: hidden;
+	transform: translateY(130px);
+	transition: all linear 1s;
 }
 .index-bottomcontact ul li{
 	margin-bottom: 22px;
@@ -798,7 +862,10 @@
 	transition: all 0.5s;
 	}
 	#navTop{
-		display: none;
+		/*display: none;*/
+	}
+	.index-case h3, .index-video .video-right h3, .index-bottomcontact h3{
+		font-size: 20px;
 	}
 }
 /* 平板端 768~992 固定宽度是750px  col-sm- */
